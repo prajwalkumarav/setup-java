@@ -62,7 +62,7 @@ export async function getJava(
       const refs = contents.match(/<a href.*\">/gi) || [];
       const downloadInfo = getDownloadInfo(refs, version, javaPackage);
       jdkFile = await tc.downloadTool(downloadInfo.url);
-      console.log(jdkFile);
+      console.log(`Jdk_file = ${jdkFile}`);
       version = downloadInfo.version;
       compressedFileExtension = IS_WINDOWS ? '.zip' : '.tar.gz';
     } else {
