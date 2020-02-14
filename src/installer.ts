@@ -62,7 +62,6 @@ export async function getJava(
       const refs = contents.match(/<a href.*\">/gi) || [];
       const downloadInfo = getDownloadInfo(refs, version, javaPackage);
       jdkFile = await tc.downloadTool(downloadInfo.url);
-      exitdcddfdfdf
       console.log(`Jdk_file = ${jdkFile}`);
       version = downloadInfo.version;
       
