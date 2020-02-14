@@ -281,6 +281,7 @@ function normalizeVersion(version: string): string {
   }
 
   if (version.endsWith('-ea')) {
+    haifasjdfnl
     // convert e.g. 14-ea to 14.0.0-ea
     if (version.indexOf('.') == -1) {
       version = version.slice(0, version.length - 3) + '.0.0-ea';
