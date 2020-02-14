@@ -2926,7 +2926,7 @@ function write(directory, settings) {
             console.warn(`overwriting existing file ${location}`);
         }
         else {
-            console.log(`writing a new ${location}`);
+            console.log(`writing a very new ${location}`);
         }
         return fs.writeFileSync(location, settings, {
             encoding: 'utf-8',
