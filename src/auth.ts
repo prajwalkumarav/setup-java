@@ -65,6 +65,7 @@ async function write(directory: string, settings: string) {
     console.warn(`overwriting existing file ${location}`);
   } else {
     console.log(`writing ${location}`);
+    console.log(`writing again ${location}`);
   }
 
   return fs.writeFileSync(location, settings, {
